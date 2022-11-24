@@ -1,0 +1,12 @@
+<P>Estamos buscando el: {{ producto }}</p>
+
+{% if nombre_producto %}
+
+<ul>
+{% for producto in productos %}
+    <li>{{ producto.nombre_producto}}</li>
+    <li>{{ producto.producto}}</li>
+{% endfor %}
+</ul>
+
+{% endif %}
